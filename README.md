@@ -254,9 +254,20 @@ Prompts are structured as JSON objects with the following schema:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏢 About Cognizant
+## 🏢 About Sreeni
 
-Cognizant is a leading provider of information technology, consulting, and business process services. This extension is part of Cognizant's Digital Experience Platform (DXP) initiative to accelerate enterprise web development.
+Hi there! My name is Sreeni, and I'm a Senior Project Manager. With over a decade of experience in the tech industry, I've cultivated a passion for all things technology. As a full-stack web developer, I've honed my skills in both front-end and back-end development, and I'm always eager to take on new challenges.
+
+As a project manager, I excel in a variety of areas, including:
+
+Initiation and Planning: I'm skilled at kickstarting projects and setting them up for success. Whether it's defining project scope, establishing timelines, or allocating resources, I ensure that everything runs smoothly from the get-go.
+Execution and Monitoring: Once a project is underway, I closely monitor progress, identify potential roadblocks, and implement corrective measures when needed. My goal is always to deliver high-quality outputs that meet client expectations.
+Control and Closure: As a project nears completion, I ensure that all loose ends are tied up and that the final product meets the required standards. I also facilitate knowledge transfer to the client and provide ongoing support to ensure a seamless transition.
+Agile Methodologies: I'm well-versed in both Waterfall and Agile methodologies, and I know when to apply each approach depending on the project's unique demands.
+Practice Development: I'm constantly looking for ways to improve our services and offerings. From identifying market gaps to creating innovative solutions, I drive practice development initiatives that help us stay ahead of the curve.
+People Development: As a people manager, I prioritize the growth and well-being of my team members. Whether it's providing guidance, mentorship, or training opportunities, I strive to foster a culture of excellence and collaboration.
+Financial Management: I'm responsible for meeting revenue and gross profit targets, and I work closely with our finance team to ensure that we're on track to achieve these goals.
+Overall, my strengths lie in my ability to lead high-performing teams, manage complex projects, and drive business growth through innovative practices and offerings. and I look forward to taking on new challenges in the future.
 
 ## 🔮 Roadmap
 
