@@ -279,4 +279,4 @@ Cognizant is a leading provider of information technology, consulting, and busin
 
 ---
 
-**Made with ❤️ by the Cognizant DXP Team**
+**Made with ❤️ by the Sreeni**
