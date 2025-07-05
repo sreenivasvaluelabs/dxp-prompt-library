@@ -1,4 +1,4 @@
-# Cognizant DXP Prompt Library
+# Sreeni DXP Prompt Library
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=cognizant-dxp.cognizant-dxp-prompt-library)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.74.0+-blue.svg)](https://code.visualstudio.com/)
