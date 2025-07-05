@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Cognizant DXP Prompt Library for Sitecore 10.4 with Helix Architecture",
+    "platform": "Sitecore 10.4",
+    "architecture": "Helix",
+    "created": "2025-07-04",
+    "author": "Cognizant DXP Team"
+  },
+  "categories": {
+    "components": {
+      "carousel": {
+        "name": "Carousel Component",
+        "description": "Responsive carousel component for showcasing multiple content items",
+        "prompts": {
+          "requirements": {
+            "prompt": "Generate detailed functional requirements for a Sitecore 10.4 Carousel component following Helix architecture principles. Include:\n- User stories for content authors and site visitors\n- Acceptance criteria for responsive behavior across devices\n- Accessibility requirements (WCAG 2.1 AA compliance)\n- Performance requirements (Core Web Vitals)\n- Data source requirements and field specifications\n- Integration requirements with Sitecore Experience Editor\n- SEO considerations and structured data requirements",
+            "context": "requirements_analysis",
+            "tags": ["requirements", "carousel", "helix", "sitecore", "accessibility"]
+          },
+          "design": {
+            "prompt": "Create a technical design document for a Sitecore 10.4 Carousel component using Helix architecture. Include:\n- Foundation layer dependencies (CSS grid, responsive utilities)\n- Feature layer structure (data templates, rendering parameters)\n- Project layer implementation (view models, controllers)\n- Component architecture diagram\n- Data template design with field types and validation\n- Rendering parameters for configuration options\n- CSS/SCSS structure following BEM methodology\n- JavaScript architecture for carousel functionality",
+            "context": "technical_design",
+            "tags": ["design", "carousel", "helix", "architecture", "templates"]
+          },
+          "development": {
+            "prompt": "Implement a Sitecore 10.4 Carousel component following Helix architecture patterns. Generate:\n- Data template definition with serialization\n- View model class with proper inheritance from RenderingModel\n- Controller with dependency injection and error handling\n- Razor view with accessibility features and responsive design\n- TypeScript/JavaScript for carousel functionality\n- SCSS styles following BEM naming convention\n- Unit tests for view model and controller logic\n- Integration with Sitecore Experience Editor\n- Proper Glass Mapper or Synthesis mapping",
+            "context": "implementation",
+            "tags": ["development", "carousel", "mvc", "typescript", "scss"]
+          },
+          "unit_testing": {
+            "prompt": "Create comprehensive unit tests for the Sitecore 10.4 Carousel component. Generate:\n- MSTest or NUnit test classes for view models and controllers\n- Mock setup for Sitecore context and dependencies\n- Test cases for edge cases and error scenarios\n- JavaScript/TypeScript unit tests using Jest or similar\n- Test data builders and object mothers\n- Code coverage analysis setup\n- Parameterized tests for different carousel configurations\n- Performance testing for large datasets",
+            "context": "unit_testing",
+            "tags": ["testing", "unittest", "mock", "jest", "coverage"]
+          },
+          "integration": {
+            "prompt": "Design integration testing strategy for Sitecore 10.4 Carousel component. Include:\n- Sitecore module packaging and deployment scripts\n- Content deployment through Sitecore CLI or TDS\n- Cross-browser testing scenarios\n- Performance testing with realistic data volumes\n- Integration with Experience Editor and Page Editor\n- Testing with different user roles and permissions\n- API testing for any custom endpoints\n- Regression testing checklist",
+            "context": "integration_testing",
+            "tags": ["integration", "deployment", "testing", "cli", "performance"]
+          },
+          "deployment": {
+            "prompt": "Create deployment procedures for Sitecore 10.4 Carousel component following DevOps best practices. Generate:\n- Azure DevOps pipeline YAML or similar CI/CD configuration\n- PowerShell scripts for environment-specific deployments\n- Database update scripts and rollback procedures\n- Configuration transformation for different environments\n- Health check endpoints and monitoring setup\n- Blue-green deployment strategy\n- Rollback procedures and disaster recovery\n- Documentation for production deployment checklist",
+            "context": "deployment",
+            "tags": ["devops", "pipeline", "azure", "powershell", "monitoring"]
+          },
+          "maintenance": {
+            "prompt": "Establish maintenance procedures for Sitecore 10.4 Carousel component. Create:\n- Performance monitoring and alerting setup\n- Log analysis and error tracking implementation\n- Regular maintenance tasks and automation scripts\n- Security vulnerability assessment procedures\n- Content author training documentation\n- Troubleshooting guide for common issues\n- Performance optimization recommendations\n- Upgrade path documentation for future Sitecore versions",
+            "context": "maintenance",
+            "tags": ["maintenance", "monitoring", "documentation", "security", "optimization"]
+          }
+        }
+      },
+      "custom_forms": {
+        "name": "Custom Forms Component",
+        "description": "Dynamic form builder with validation and submission handling",
+        "prompts": {
+          "requirements": {
+            "prompt": "Define comprehensive requirements for a Sitecore 10.4 Custom Forms component with Helix architecture. Include:\n- Dynamic form field types (text, email, phone, dropdown, checkbox, file upload)\n- Form validation requirements (client-side and server-side)\n- Submission handling and data persistence options\n- Integration with Sitecore Forms or custom form engine\n- GDPR compliance and data protection requirements\n- Multi-step form support and progress indicators\n- Conditional field display logic\n- Integration with CRM systems and marketing automation",
+            "context": "requirements_analysis",
+            "tags": ["requirements", "forms", "validation", "gdpr", "integration"]
+          },
+          "design": {
+            "prompt": "Design technical architecture for Sitecore 10.4 Custom Forms component using Helix principles. Include:\n- Form schema definition and field type architecture\n- Validation framework design (FluentValidation or similar)\n- Data persistence layer with Entity Framework or similar\n- API design for form submission and retrieval\n- Security architecture for form handling\n- Caching strategy for form definitions\n- Error handling and logging framework\n- Integration points with external systems",
+            "context": "technical_design",
+            "tags": ["design", "forms", "validation", "api", "security"]
+          },
+          "development": {
+            "prompt": "Implement Sitecore 10.4 Custom Forms component following Helix architecture. Generate:\n- Form builder interface with drag-and-drop functionality\n- Dynamic form rendering engine with Razor views\n- Comprehensive validation framework implementation\n- Form submission handlers with async processing\n- File upload functionality with security controls\n- Form analytics and tracking implementation\n- Responsive form layouts with CSS Grid/Flexbox\n- Accessibility features (ARIA labels, keyboard navigation)\n- Integration with Sitecore Experience Database (xDB)",
+            "context": "implementation",
+            "tags": ["development", "forms", "validation", "async", "accessibility"]
+          },
+          "unit_testing": {
+            "prompt": "Create thorough unit testing suite for Sitecore 10.4 Custom Forms component. Generate:\n- Test cases for form validation logic with edge cases\n- Mock implementations for external dependencies\n- File upload testing with various file types and sizes\n- Form submission testing with different data scenarios\n- Security testing for injection attacks and XSS\n- Performance testing for large forms\n- Accessibility testing automation\n- Integration testing with Sitecore APIs",
+            "context": "unit_testing",
+            "tags": ["testing", "validation", "security", "performance", "accessibility"]
+          },
+          "integration": {
+            "prompt": "Plan integration testing for Sitecore 10.4 Custom Forms component. Include:\n- End-to-end form submission testing\n- Cross-browser compatibility testing\n- Mobile device testing and responsive behavior\n- Integration testing with CRM and email systems\n- Load testing for high-volume form submissions\n- Security penetration testing\n- GDPR compliance verification\n- Multi-language form testing",
+            "context": "integration_testing",
+            "tags": ["integration", "e2e", "mobile", "security", "gdpr"]
+          },
+          "deployment": {
+            "prompt": "Design deployment strategy for Sitecore 10.4 Custom Forms component. Create:\n- Database migration scripts for form storage\n- Configuration management for different environments\n- SSL certificate configuration for secure submissions\n- CDN setup for form assets and file uploads\n- Monitoring and alerting for form submission failures\n- Backup and recovery procedures for form data\n- Scalability configuration for high-traffic scenarios\n- Compliance audit trail setup",
+            "context": "deployment",
+            "tags": ["deployment", "database", "ssl", "cdn", "monitoring"]
+          },
+          "maintenance": {
+            "prompt": "Establish maintenance procedures for Sitecore 10.4 Custom Forms component. Include:\n- Form submission monitoring and analytics\n- Regular data cleanup and archival procedures\n- Security audit and vulnerability scanning\n- Performance optimization and caching review\n- Form analytics and conversion tracking\n- User feedback collection and analysis\n- Regular backup verification and disaster recovery testing\n- Documentation updates and training materials",
+            "context": "maintenance",
+            "tags": ["maintenance", "analytics", "security", "performance", "backup"]
+          }
+        }
+      },
+      "navigation": {
+        "name": "Navigation Component",
+        "description": "Multi-level responsive navigation with breadcrumbs and search",
+        "prompts": {
+          "requirements": {
+            "prompt": "Specify requirements for a Sitecore 10.4 Navigation component using Helix architecture. Include:\n- Multi-level menu structure with unlimited depth\n- Responsive behavior (hamburger menu, off-canvas)\n- Breadcrumb navigation with structured data\n- Search integration with auto-complete\n- Active page highlighting and navigation state\n- Accessibility requirements (ARIA navigation, keyboard support)\n- Caching requirements for performance\n- Integration with Sitecore security and personalization",
+            "context": "requirements_analysis",
+            "tags": ["requirements", "navigation", "responsive", "accessibility", "search"]
+          },
+          "design": {
+            "prompt": "Create technical design for Sitecore 10.4 Navigation component with Helix architecture. Include:\n- Navigation data source design and caching strategy\n- Hierarchical menu structure and rendering logic\n- Mobile-first responsive design patterns\n- Search integration architecture\n- Performance optimization through lazy loading\n- SEO-friendly navigation structure\n- Personalization integration points\n- Analytics and tracking implementation design",
+            "context": "technical_design",
+            "tags": ["design", "navigation", "caching", "mobile", "seo"]
+          },
+          "development": {
+            "prompt": "Implement Sitecore 10.4 Navigation component following Helix principles. Generate:\n- Navigation data provider with caching implementation\n- Responsive navigation view with ARIA accessibility\n- JavaScript for mobile menu functionality and keyboard navigation\n- CSS/SCSS for multi-level dropdown animations\n- Breadcrumb component with structured data markup\n- Search auto-complete functionality with debouncing\n- Navigation highlighting for active pages\n- Integration with Sitecore content tree and security",
+            "context": "implementation",
+            "tags": ["development", "navigation", "accessibility", "javascript", "breadcrumbs"]
+          },
+          "unit_testing": {
+            "prompt": "Create comprehensive testing for Sitecore 10.4 Navigation component. Generate:\n- Unit tests for navigation data providers and caching\n- JavaScript tests for menu interactions and keyboard navigation\n- Accessibility testing with automated tools\n- Performance testing for large navigation structures\n- Cross-browser compatibility testing\n- Mobile device testing for touch interactions\n- SEO testing for navigation markup\n- Security testing for navigation permissions",
+            "context": "unit_testing",
+            "tags": ["testing", "accessibility", "performance", "mobile", "seo"]
+          },
+          "integration": {
+            "prompt": "Plan integration testing for Sitecore 10.4 Navigation component. Include:\n- End-to-end navigation flow testing\n- Integration with Sitecore search providers\n- Multi-site navigation testing\n- Personalization and A/B testing integration\n- Performance testing under load\n- CDN integration for navigation assets\n- Analytics tracking verification\n- Third-party integration testing",
+            "context": "integration_testing",
+            "tags": ["integration", "search", "multisite", "personalization", "analytics"]
+          },
+          "deployment": {
+            "prompt": "Design deployment procedures for Sitecore 10.4 Navigation component. Create:\n- Navigation structure deployment automation\n- Cache warming strategies for navigation data\n- CDN configuration for navigation assets\n- Search index rebuilding procedures\n- Performance monitoring setup\n- Rollback procedures for navigation changes\n- Multi-environment configuration management\n- Health check endpoints for navigation functionality",
+            "context": "deployment",
+            "tags": ["deployment", "caching", "cdn", "search", "monitoring"]
+          },
+          "maintenance": {
+            "prompt": "Establish maintenance procedures for Sitecore 10.4 Navigation component. Include:\n- Navigation performance monitoring and optimization\n- Regular cache analysis and tuning\n- Search index maintenance and optimization\n- Accessibility compliance regular audits\n- User behavior analytics and optimization\n- Content author training for navigation management\n- Regular security reviews for navigation permissions\n- Documentation updates and best practices",
+            "context": "maintenance",
+            "tags": ["maintenance", "performance", "accessibility", "analytics", "security"]
+          }
+        }
+      },
+      "cta_modal": {
+        "name": "CTA Component with Modal",
+        "description": "Call-to-action component with modal dialog for detailed content and actions",
+        "prompts": {
+          "requirements": {
+            "prompt": "Define requirements for Sitecore 10.4 CTA Modal component using Helix architecture. Include:\n- Modal dialog with title, body content, and feature images\n- Multiple CTA types (Order Now, Featured CTA, Learn More)\n- Responsive modal behavior across devices\n- Accessibility requirements (focus management, escape key, ARIA)\n- A/B testing capabilities for different CTA variations\n- Analytics tracking for modal interactions\n- Integration with e-commerce or lead generation systems\n- Performance requirements for modal loading and animations",
+            "context": "requirements_analysis",
+            "tags": ["requirements", "cta", "modal", "accessibility", "analytics"]
+          },
+          "design": {
+            "prompt": "Create technical design for Sitecore 10.4 CTA Modal component with Helix architecture. Include:\n- Modal component architecture with reusable patterns\n- CTA configuration and variant management\n- Image optimization and lazy loading strategy\n- Animation and transition framework\n- Focus management and accessibility implementation\n- Analytics event tracking architecture\n- Integration points with commerce and CRM systems\n- Caching strategy for modal content and images",
+            "context": "technical_design",
+            "tags": ["design", "modal", "animation", "images", "commerce"]
+          },
+          "development": {
+            "prompt": "Implement Sitecore 10.4 CTA Modal component following Helix principles. Generate:\n- Modal dialog component with accessibility features\n- CTA button variants with different styling and behavior\n- Image gallery with responsive images and lazy loading\n- JavaScript for modal functionality and keyboard interaction\n- CSS animations for smooth modal transitions\n- Integration with Sitecore analytics and experience database\n- A/B testing framework integration\n- Order processing and lead capture functionality",
+            "context": "implementation",
+            "tags": ["development", "modal", "javascript", "animations", "analytics"]
+          },
+          "unit_testing": {
+            "prompt": "Create testing suite for Sitecore 10.4 CTA Modal component. Generate:\n- Unit tests for modal functionality and state management\n- Accessibility testing with screen reader simulation\n- Cross-browser modal behavior testing\n- Mobile touch interaction testing\n- Image loading and optimization testing\n- Analytics event tracking verification\n- A/B testing variation testing\n- Performance testing for modal loading times",
+            "context": "unit_testing",
+            "tags": ["testing", "accessibility", "mobile", "performance", "analytics"]
+          },
+          "integration": {
+            "prompt": "Plan integration testing for Sitecore 10.4 CTA Modal component. Include:\n- End-to-end CTA conversion flow testing\n- Integration testing with e-commerce platforms\n- Lead generation system integration testing\n- Email marketing automation integration\n- Social media sharing integration testing\n- Payment gateway integration testing\n- Analytics platform integration verification\n- Multi-variant testing and personalization",
+            "context": "integration_testing",
+            "tags": ["integration", "ecommerce", "leads", "email", "payments"]
+          },
+          "deployment": {
+            "prompt": "Design deployment strategy for Sitecore 10.4 CTA Modal component. Create:\n- A/B testing configuration deployment\n- Analytics tracking code deployment\n- CDN configuration for modal assets and images\n- E-commerce integration configuration\n- SSL configuration for secure transactions\n- Performance monitoring for conversion tracking\n- Rollback procedures for CTA variations\n- Multi-environment testing procedures",
+            "context": "deployment",
+            "tags": ["deployment", "analytics", "cdn", "ecommerce", "ssl"]
+          },
+          "maintenance": {
+            "prompt": "Establish maintenance procedures for Sitecore 10.4 CTA Modal component. Include:\n- Conversion rate monitoring and optimization\n- A/B testing result analysis and implementation\n- Image asset optimization and CDN performance\n- Accessibility compliance regular audits\n- Security reviews for payment and data collection\n- User experience analytics and improvement recommendations\n- Regular backup of conversion data and configurations\n- Training materials for marketing teams",
+            "context": "maintenance",
+            "tags": ["maintenance", "conversion", "optimization", "security", "training"]
+          }
+        }
+      }
+    }
+  },
+  "sdlc_stages": {
+    "requirements": {
+      "name": "Requirements Analysis",
+      "description": "Gathering and documenting functional and non-functional requirements"
+    },
+    "design": {
+      "name": "Technical Design",
+      "description": "Creating architectural and detailed design specifications"
+    },
+    "development": {
+      "name": "Implementation",
+      "description": "Coding and building the component functionality"
+    },
+    "unit_testing": {
+      "name": "Unit Testing",
+      "description": "Testing individual components and functions"
+    },
+    "integration": {
+      "name": "Integration Testing",
+      "description": "Testing component integration and system workflows"
+    },
+    "deployment": {
+      "name": "Deployment",
+      "description": "Deploying components to different environments"
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "description": "Ongoing support, monitoring, and optimization"
+    }
+  },
+  "usage_instructions": {
+    "description": "How to use this prompt library with GitHub Copilot in VS Code",
+    "steps": [
+      "1. Open the relevant component file in VS Code",
+      "2. Select the appropriate prompt based on SDLC stage and component type",
+      "3. Copy the prompt text and paste it as a comment in your code",
+      "4. Use GitHub Copilot to generate code based on the prompt context",
+      "5. Refine and customize the generated code as needed",
+      "6. Follow the tags for additional context and related prompts"
+    ]
+  },
+  "extensions": {
+    "recommended_vscode_extensions": [
+      "ms-vscode.vscode-json",
+      "github.copilot",
+      "github.copilot-chat",
+      "ms-dotnettools.csharp",
+      "bradlc.vscode-tailwindcss",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}

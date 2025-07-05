@@ -1,0 +1,15 @@
+.vscode-test/**
+.vscode-test-web/**
+src/**
+!src/promptData.json
+node_modules/**
+.gitignore
+.eslintrc.json
+tsconfig.json
+setup.ps1
+examples/**
+**/*.ts
+**/*.map
+.nyc_output/**
+coverage/**
+**/*.vsix

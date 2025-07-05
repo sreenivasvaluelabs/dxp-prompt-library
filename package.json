@@ -1,0 +1,188 @@
+{
+  "name": "dxp-prompt-library",
+  "displayName": "DXP Prompt Library",
+  "description": "AI-powered prompt library for Sitecore 10.4 development with Helix architecture, designed to enhance GitHub Copilot suggestions",
+  "version": "1.0.0",
+  "publisher": "cognizant-dxp",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "AI"
+  ],
+  "keywords": [
+    "sitecore",
+    "helix",
+    "prompt",
+    "copilot",
+    "ai",
+    "cognizant",
+    "dxp"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dxpPromptLibrary.test",
+        "title": "DXP: Test Extension",
+        "category": "DXP Prompt Library"
+      },
+      {
+        "command": "dxpPromptLibrary.openPromptPalette",
+        "title": "DXP: Open Prompt Palette",
+        "category": "DXP Prompt Library"
+      },
+      {
+        "command": "dxpPromptLibrary.insertPrompt",
+        "title": "DXP: Insert Prompt",
+        "category": "DXP Prompt Library"
+      },
+      {
+        "command": "dxpPromptLibrary.searchPrompts",
+        "title": "DXP: Search Prompts",
+        "category": "DXP Prompt Library"
+      },
+      {
+        "command": "dxpPromptLibrary.filterByComponent",
+        "title": "DXP: Filter by Component",
+        "category": "DXP Prompt Library"
+      },
+      {
+        "command": "dxpPromptLibrary.filterBySDLC",
+        "title": "DXP: Filter by SDLC Stage",
+        "category": "DXP Prompt Library"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "dxpPromptLibrary.openPromptPalette",
+        "key": "ctrl+shift+p",
+        "mac": "cmd+shift+p",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "dxpPromptLibrary.insertPrompt",
+          "group": "dxp@1",
+          "when": "editorHasSelection || editorTextFocus"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "dxpPromptLibrary.test"
+        },
+        {
+          "command": "dxpPromptLibrary.openPromptPalette"
+        },
+        {
+          "command": "dxpPromptLibrary.insertPrompt"
+        },
+        {
+          "command": "dxpPromptLibrary.searchPrompts"
+        },
+        {
+          "command": "dxpPromptLibrary.filterByComponent"
+        },
+        {
+          "command": "dxpPromptLibrary.filterBySDLC"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "dxpPromptLibrary",
+          "name": "DXP Prompt Library",
+          "when": "workspaceHasFolder"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "dxpPromptLibrary",
+          "title": "DXP Prompt Library",
+          "icon": "$(code)"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "DXP Prompt Library",
+      "properties": {
+        "dxpPromptLibrary.autoSuggest": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic prompt suggestions based on file context"
+        },
+        "dxpPromptLibrary.defaultSDLCStage": {
+          "type": "string",
+          "default": "development",
+          "enum": [
+            "requirements",
+            "design",
+            "development",
+            "unit_testing",
+            "integration",
+            "deployment",
+            "maintenance"
+          ],
+          "description": "Default SDLC stage for prompt suggestions"
+        },
+        "dxpPromptLibrary.enableInlineComments": {
+          "type": "boolean",
+          "default": true,
+          "description": "Insert prompts as inline comments for GitHub Copilot"
+        },
+        "dxpPromptLibrary.promptPrefix": {
+          "type": "string",
+          "default": "// DXP Prompt:",
+          "description": "Prefix for inserted prompts"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./ && npm run copy-assets",
+    "copy-assets": "node -e \"require('fs').copyFileSync('src/promptData.json', 'out/promptData.json')\"",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.4",
+    "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "fuse.js": "^6.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cognizant/dxp-prompt-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cognizant/dxp-prompt-library/issues"
+  },
+  "homepage": "https://github.com/cognizant/dxp-prompt-library#readme",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  }
+}
